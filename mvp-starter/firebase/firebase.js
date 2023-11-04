@@ -14,3 +14,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBHFuU567-xRVWeAmH9-lFyqfzZB-XGOik",
+  authDomain: "finance-tracker-e27c1.firebaseapp.com",
+  projectId: "finance-tracker-e27c1",
+  storageBucket: "finance-tracker-e27c1.appspot.com",
+  messagingSenderId: "174708227461",
+  appId: "1:174708227461:web:0b8b173f5b6f656834d8ec",
+  measurementId: "G-4CTZNNEN1V"
+};
+
+// Initialize Firebase
+export const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
